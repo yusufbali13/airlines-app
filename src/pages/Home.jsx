@@ -7,7 +7,6 @@ import logo from "../helper/turkish.png";
 const Home = () => {
   const [appointments, setAppointments] = useState(appointmentData);
 
-  console.log(appointments);
   return (
     <main className="text-center mt-2">
       <img className="mb-5" src={logo} alt="" width={600} />

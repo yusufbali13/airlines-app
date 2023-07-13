@@ -4,8 +4,6 @@ import Col from "react-bootstrap/Col";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 const AppointmentList = ({ apps, setApps }) => {
-  console.log(apps);
-
   const handleDelete = (id) => {
     setApps(apps.filter((item) => item.id !== id));
   };
@@ -13,7 +11,7 @@ const AppointmentList = ({ apps, setApps }) => {
   const handleDoubleClick = (id) => {
     setApps(
       apps.map((item) =>
-        item.id == id ? { ...item, consulted: !item.consulted } : item
+        item.id === id ? { ...item, consulted: !item.consulted } : item
       )
     );
   };
@@ -26,7 +24,9 @@ const AppointmentList = ({ apps, setApps }) => {
       >
         Ticket List
       </h3>
-      {apps.length < 1 && <img src="./img/appointment.jpg" width="70%" />}
+      {apps.length < 1 && (
+        <img src="./img/appointment.jpg" alt="img" width="70%" />
+      )}
 
       {apps.map(({ id, patient, consulted, doctor, day }) => (
         <div
