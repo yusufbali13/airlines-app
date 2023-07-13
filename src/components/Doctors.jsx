@@ -14,7 +14,7 @@ const Doctors = ({ apps, setApps }) => {
   // }
   return (
     <Container className="p-2">
-      <Row className="justify-content-center">
+      <Row className="justify-content-center text-white">
         {doctorData.map(({ id, img, dep, name }) => (
           <Col xs={6} sm={4} md={3} key={id}>
             <img

@@ -26,12 +26,12 @@ function AddModal({ show, handleClose, apps, setApps, drName }) {
     <>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Appointment for {drName}</Modal.Title>
+          <Modal.Title>Buy Tickets: {drName}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="name">
-              <Form.Label>Patient Name</Form.Label>
+              <Form.Label>Passenger Name</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter name"
@@ -42,7 +42,7 @@ function AddModal({ show, handleClose, apps, setApps, drName }) {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="date">
-              <Form.Label>Date</Form.Label>
+              <Form.Label>Ticket Date</Form.Label>
               <Form.Control
                 type="date"
                 placeholder="Date"
@@ -51,7 +51,6 @@ function AddModal({ show, handleClose, apps, setApps, drName }) {
                 required
               />
             </Form.Group>
-
             <div className="text-center">
               <Button variant="success" type="submit" className="me-2">
                 Save

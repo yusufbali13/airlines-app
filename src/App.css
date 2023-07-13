@@ -7,7 +7,7 @@
 }
 .doctor-img:hover {
   transform: scale(1.05);
-  border: 2px solid #c80304;
+  border: 2px solid black;
   cursor: pointer;
 }
 
@@ -25,11 +25,11 @@
 }
 
 .consulted {
-  border-left: 1rem solid #c80304;
+  border-left: 1rem solid black;
 }
 .consulted::after {
   content: "Cancelled";
-  background-color: #c80304;
+  background-color: black;
   color: white;
   font-size: 2rem;
   border-radius: 1rem;
